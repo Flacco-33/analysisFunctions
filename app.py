@@ -37,4 +37,4 @@ iface3=gr.Interface(
 
 demo = gr.TabbedInterface([iface, iface2,iface3], ["Text-to-text", "Emotion Match Analysis","Analysis Teacher"])
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(server_port=7862)
