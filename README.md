@@ -10,11 +10,11 @@ Este proyecto utiliza Gradio para crear una interfaz de usuario interactiva que 
 
 1. Clona este repositorio:
     ```bash
-    git clone https://github.com/tu_usuario/AnalisisEmotionGemini.git
+    git clone https://github.com/Flacco-33/analysisFunctions.git
     ```
 2. Navega al directorio del proyecto:
     ```bash
-    cd AnalisisEmotionGemini
+    cd analysisFunctions
     ```
 3. Instala las dependencias:
     ```bash
