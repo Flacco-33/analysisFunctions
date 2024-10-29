@@ -1,4 +1,4 @@
-# Análisis de Emociones con Gemini
+# Funciones de análisis
 
 Este proyecto utiliza Gradio para crear una interfaz de usuario interactiva que permite analizar emociones en texto y analizar conjuntos de datos
 ## Requisitos
