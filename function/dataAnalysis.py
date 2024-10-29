@@ -21,10 +21,10 @@ def analysis_data_match():
         
         for match in data["dataMatch"]:
             analyzeData= analyze_data(match, prompt)
-          
-            data = json.loads(analyzeData)
+            print(analyzeData)
+            # data = json.loads(analyzeData)
            
-            response = requests.post(urlSaveData, json=data)
+            # response = requests.post(urlSaveData, json=data)
             
         return {"status": "data celean"}
     else:

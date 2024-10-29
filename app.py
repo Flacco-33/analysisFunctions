@@ -1,10 +1,4 @@
 import gradio as gr
-import os
-from openai import OpenAI
-import json
-import requests
-from dotenv import load_dotenv
-
 # from dataAnalysis import analizar_data_match 
 from function.textAnalysis import analyze_comment
 # from analysisTeacher import analysis_teacher as py
@@ -16,7 +10,8 @@ iface = gr.Interface(
     inputs="text",
     outputs="text",
     title="Sentiment and Emotion Analyzer",
-    description="Analyze the sentiment and emotions of student comments about their teachers."
+    description="Analyze the sentiment and emotions of student comments about their teachers.",
+    api_name="/analyze_comment"
 )
 
 iface2 = gr.Interface(
@@ -24,7 +19,8 @@ iface2 = gr.Interface(
     inputs=None,
     outputs="text",
     title="Emotion Match Analysis",
-    description="Analyze the matches between the emotions of students and teachers."
+    description="Analyze the matches between the emotions of students and teachers.",
+    api_name="/analysis_data_match"
 )
 
 iface3=gr.Interface(
@@ -32,7 +28,8 @@ iface3=gr.Interface(
     inputs=None,
     outputs="text",
     title="Teacher Comments Analysis",
-    description="Analyze the comments of the teachers."
+    description="Analyze the comments of the teachers.",
+    api_name="/analysis_teacher"
 )
 
 demo = gr.TabbedInterface([iface, iface2,iface3], ["Text-to-text", "Emotion Match Analysis","Analysis Teacher"])
