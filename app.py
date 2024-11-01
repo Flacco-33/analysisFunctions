@@ -11,4 +11,4 @@ demo = gr.Interface(
 )
 
 if __name__ == "__main__":
-    demo.launch(server_port=7862)
+    demo.queue().launch(server_port=7862)
